@@ -1,7 +1,12 @@
 {% extends 'base.html.twig' %}
 
 {% block content %}
-    <h1>Hello 👋🏼!</h1>
+    <h1 {{ stimulus_controller('symfony/ux-typed', {
+            strings: ['Hello 👋!'],
+            showCursor: false,
+            cursorChar: '✨',
+            smartBackspace: true,
+        })}}></h1>
 
     <hr />
 
